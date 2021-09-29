@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+.main {
+  max-width: 100vw;
+  height: 100vh;
+  background: #2c323e;
+}
+.nav-bar {
+  max-width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px#252a35;
+  padding: .5rem;
+}
+.mobile-left-side {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  min-width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  transition: transform .5s;
+}
+.logo:hover {
+  cursor: pointer;
+  transform: rotate(-10deg);
+}
+.nav-items {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 16px;
+  color: #969ba1;
+  margin: 0;
+}
+.nav-item {
+  width: auto;
+  margin-right: 0px 12px;
+}
+.nav-item:hover {
+  color: white;
+  cursor: pointer;
+}
+.charts {
+  display: none;
+}
+.right-side {
+  display: none;
+}
+.content {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.converter {
+  width: 90%;
+  max-width: 420px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: #212529;
+  padding: 10px;
+  margin-bottom: 15rem;
+}
+.sender {
+  height: 80px;
+  width: 90%;
+  border-radius: 20px;
+  border: 1px solid rgb(44, 47, 54);
+  background-color: rgb(33, 36, 41);
+}
+.sender > h3 {
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(195, 197, 203);
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.input-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.input-row > input {
+  width: 100px;
+  background: transparent;
+  font-family: "Inter";
+  border: none;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+.crypto-selector {
+  width: 110px;
+  height: 40px;
+  background-color: rgb(33, 36, 41);
+  border-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 20px;
+  font-family: "Inter";
+  border-radius: 12px;
+  margin-right: 10px;
+}
+.crypto-selector:hover {
+  cursor: pointer;
+  background-color: rgb(56, 58, 63);
+}
+.crypto-selector2:hover {
+  cursor: pointer;
+  background-color: rgb(27, 97, 194);
+}
+.crypto-selector2 {
+  width: 150px;
+  height: 40px;
+  background-color: rgb(33, 114, 229);
+  border-radius: 12px;
+  border-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: bold;
+  margin-right: 10px;
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+.crypto-selector > img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgb(33, 36, 41);
+  margin-right: 5px;
+}
+.divider-container {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.divider {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+.connect-button {
+  width: 90%;
+  height: 60px;
+  padding: 18px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  color: rgb(109, 168, 255);
+  background-color: rgba(21, 61, 111, 0.44);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.connect-button:hover {
+  cursor: pointer;
+  background-color: rgba(14, 42, 77, 0.44);
+}
+@media only screen and (min-width: 1000px) {
+    .nav-items {
+        padding: 0;
+        padding-left: 5px;
+    }
+  .charts {
+    display: flex;
+    width: auto;
+    margin-right: 0px 12px;
+  }
+  .charts:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .mobile-left-side {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .right-side {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .right-side > button {
+    margin: 5px;
+  }
+  .right-side > button:hover {
+    cursor: pointer;
+  }
+  .uni-button {
+    width: 45px;
+    height: 40px;
+    border-radius: 12px;
+    color: white;
+    border: none;
+    background-image: linear-gradient(to bottom right, #c31a6f, #5246a5);
+  }
+  .uni-button:hover{
+    background-image: linear-gradient(to bottom right, #9b1457, #4a3f96);
+  }
+  .wallet-button {
+    width: 180px;
+    height: 40px;
+    font-size: 16px;
+  color: rgb(109, 168, 255);
+    background-color: #1e2f48;
+    border: none;
+    border-radius: 8px;
+  }
+  .wallet-button:hover{
+    border: 1px solid rgb(80, 120, 180);
+  }
+  .settings-button {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(64, 68, 79);
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  .settings-button:hover{
+    background-color: rgb(97, 103, 119);
+  }
+  .md-settings {
+    width: 20px;
+    height: 20px;
+  }
+  .more-button {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(64, 68, 79);
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  .more-button:hover{
+    background-color: rgb(97, 103, 119);
+  }
+  .md-more {
+    width: 20px;
+    height: 20px;
+  }
+}
