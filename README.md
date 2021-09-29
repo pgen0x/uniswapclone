@@ -6,4 +6,5 @@ Made a simple clone of the Uniswap Cryptocurrency exchange site [here](https://a
 ## Desktop View
 ![alt text](https://github.com/pgen0x/uniswapclone/raw/main/Screen%20Shot%202020-12-17%20at%2012.50.59%20PM.png "Desktop View")
 
-![alt text](https://github.com/Mathews41/Uniswap-clone/ "Original Source")
+## Original Source
+![Original Source](https://github.com/Mathews41/Uniswap-clone/ "Original Source")
